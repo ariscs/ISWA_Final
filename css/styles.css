@@ -1,0 +1,11 @@
+.bg-blue{
+    background-color: #2ba6cb !important;
+}
+.f-white{
+    color: white !important;
+}
+
+.sticky{
+    position:fixed !important;
+    width:100% !important;
+}
