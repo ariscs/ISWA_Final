@@ -59,32 +59,32 @@
 
             <fieldset class="fieldset">
                 <legend>6. ¿Cuántas descargas se tienen actualmente?</legend>
-                <input type="number" name="6" id="">
+                <input type="number" name="6" id="d">
             </fieldset>
 
             <fieldset class="fieldset">
                 <legend>7. ¿Cuál es el porcentaje de usuarios activos al día?</legend>
-                <input type="number" name="7" id="">
+                <input type="number" name="7" id="u">
             </fieldset>
 
             <fieldset class="fieldset">
                     <legend>8. ¿Cuál es el porcentaje de usuarios por región</legend>
                     <label for="">México:</label>
-                    <input type="number" name="8.1" id="">
+                    <input type="number" name="8.1" id="r1">
                     <label for="">Estados Unidos:</label>
-                    <input type="number" name="8.2" id="">
+                    <input type="number" name="8.2" id="r2">
                     <label for="">Resto de Latinoamérica:</label>
-                    <input type="number" name="8.3" id="">
+                    <input type="number" name="8.3" id="r3">
             </fieldset>
 
             <fieldset class="fieldset">
                 <legend>9. ¿Qué porcentaje de jugadores utilizan Android</legend>
-                <input type="number" name="9" id="">
+                <input type="number" name="9" id="o">
             </fieldset>
 
             <fieldset class="fieldset">
                 <legend>10. Tiempo promedio que invierten los jugadores por sesión</legend>
-                <input type="number" name="10" id="">
+                <input type="number" name="10" id="t">
             </fieldset>
             <p class="label"><b>Preguntas orientadas al Desarrollo</b></p>
             <fieldset class="fieldset">
@@ -127,6 +127,14 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
     <script src="js/vendor/foundation.js"></script>
-    <script src="js/index.js"></script>
+    <script>
+        graficas = () => {
+            localStorage.setItem('des') = document.getElementById('d');
+            localStorage.setItem('usu') = document.getElementById('d');
+            localStorage.setItem('reg1') = document.getElementById('r1');
+            localStorage.setItem('reg2') = document.getElementById('r2');
+            localStorage.setItem('reg3') = document.getElementById('r3');
+        }
+    </script>
 </body>
 </html>
