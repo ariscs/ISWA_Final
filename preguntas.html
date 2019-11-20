@@ -120,7 +120,7 @@
                 <input type="radio" name="15" id=""><label for="">Malo</label>
             </fieldset>
             <div class="row align-right">
-                    <a href="preguntas.html" class="button">Hecho</a>
+                    <button class="button" onclick="graficas()">Hecho</button>
             </div>
         </div>
     </div>
@@ -129,11 +129,15 @@
     <script src="js/vendor/foundation.js"></script>
     <script>
         graficas = () => {
-            localStorage.setItem('des') = document.getElementById('d');
-            localStorage.setItem('usu') = document.getElementById('d');
-            localStorage.setItem('reg1') = document.getElementById('r1');
-            localStorage.setItem('reg2') = document.getElementById('r2');
-            localStorage.setItem('reg3') = document.getElementById('r3');
+            localStorage.setItem('des', document.getElementById('d').value);
+            localStorage.setItem('usu', document.getElementById('u').value);
+            localStorage.setItem('reg1', document.getElementById('r1').value);
+            localStorage.setItem('reg2', document.getElementById('r2').value);
+            localStorage.setItem('reg3', document.getElementById('r3').value);
+            localStorage.setItem('os', document.getElementById('o').value);
+            localStorage.setItem('tie', document.getElementById('t').value);
+
+            window.location.href = "./situaciones.html";
         }
     </script>
 </body>

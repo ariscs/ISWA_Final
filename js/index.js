@@ -1,10 +1,10 @@
-var descargas = localStorage.getItem('des');
-var usuariosA = localStorage.getItem('usu');
-var region1 = localStorage.getItem('reg1');
-var region2 = localStorage.getItem('reg2');
-var region3 = localStorage.getItem('reg3');
-var os = localStorage.getItem('os');
-var tiempo = localStorage.getItem('tie');
+var descargas = parseInt(localStorage.getItem('des'));
+var usuariosA = parseInt(localStorage.getItem('usu'));
+var region1 = parseInt(localStorage.getItem('reg1'));
+var region2 = parseInt(localStorage.getItem('reg2'));
+var region3 = parseInt(localStorage.getItem('reg3'));
+var os = parseInt(localStorage.getItem('os'));
+var tiempo = parseInt(localStorage.getItem('tie'));
 
 Highcharts.chart('descargas', {
 
