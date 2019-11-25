@@ -38,7 +38,7 @@ Highcharts.chart('descargas', {
 
     series: [{
         name: 'Descargas',
-        data: [10000, 150000, 500000, 1500000, 5000000]
+        data: [10000, 150000, 500000, 2000000, 5000000]
     }],
 
     responsive: {
